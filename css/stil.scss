@@ -7,10 +7,24 @@ header, nav {
   display: flex;
   justify-content: space-around;
 }
+
+html {
+  font-size: 62.5%; //1rem=10px
+}
 a {
   text-decoration: none;
   color: #000;
+  font-size: 1.4rem;
 }
+h1 {
+  font-family: "Josefin Sans SemiBold", SansSerif;
+  font-size: 2rem;
+}
+p {
+  font-family: "Josefin Sans", SansSerif;
+  font-size: 1.2rem;
+}
+
 footer {
   background-color: #286628;
   p: #fff;
@@ -20,11 +34,14 @@ footer {
 //forside Louise
 //forside Louise slut
 
-//om
-//om slut
+//om Jessie
+//om Jessie slut
 
-//produkter
-//produkter slut
+//produkter Ivan
+//produkter Ivan slut
 
-//kontakt
-//kontakt slut
+//tilbud Anders
+//tilbud Anders slut
+
+//kontakt Niklas
+//kontakt Niklas slut

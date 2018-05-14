@@ -2,9 +2,21 @@ header, nav {
   display: flex;
   justify-content: space-around; }
 
+html {
+  font-size: 62.5%; }
+
 a {
   text-decoration: none;
-  color: #000; }
+  color: #000;
+  font-size: 1.4rem; }
+
+h1 {
+  font-family: "Josefin Sans SemiBold", SansSerif;
+  font-size: 2rem; }
+
+p {
+  font-family: "Josefin Sans", SansSerif;
+  font-size: 1.2rem; }
 
 footer {
   background-color: #286628;
