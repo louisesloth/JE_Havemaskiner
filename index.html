@@ -12,15 +12,26 @@
     <body>
         <header>
             <figure>
-                <a href="index.html"><img alt="JE Havemaskiners logo, link til forside" src="billeder/logo_ub.png"></a>
+                <a href="index.html"><img alt="JE Havemaskiners logo, link til forside." src="billeder/logo_ub.png"></a>
             </figure>
-            <figure class="container" onclick="myFunction(this)">
-                    <figure class="bar1"></figure>
-                    <figure class="bar2"></figure>
-                    <figure class="bar3"></figure>
-            </figure>
+            <nav class="navbar" class="dropdown">
+                    <i class="dropbtn">
+                        <div class="container">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </i>
+                    <div class="dropdown-content">
+                        <a href="index.html" class="nav">Forside</a>
+                        <a href="om.html" class="nav">Om</a>
+                        <a href="produkter.html" class="nav">Produkter</a>
+                        <a href="tilbud.html" class="nav">Tilbud</a>
+                        <a href="kontakt.html" class="nav">Kontakt</a>
+                    </div>
+                </nav>
         </header>
-        <nav>
+        <nav class="desktop">
             <a href="index.html" class="nav">Forside</a>
             <a href="om.html" class="nav">Om</a>
             <a href="produkter.html" class="nav">Produkter</a>
@@ -34,7 +45,7 @@
             <script type="text/javascript" src="script/script.js"></script>
         </section>
         <footer>
-            <p>Her skal der være en footer</p>
+            <a href="http://www.skovhavepark.dk/"><img alt="Branceforening for Skov-Have-Park forretningers logo, link til hjemmeside." src="billeder/skovhaveparklogo.png"></a>
         </footer>
     </body>
 <!--Louise slut-->
