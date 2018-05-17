@@ -142,14 +142,20 @@ p {
 }
 
 footer {
-  img {
-    max-width: 50%;
-    margin: 0% 25%;
+  background-color: $green;
+  max-height: 115px;
+  display: flex;
+  justify-content: space-between;
+  img, article{
+    max-height: 113px;
   }
 }
 //overordnet Louise slut
 
 //forside Louise
+body #forside {
+  
+}
 //forside Louise slut
 
 //om Jessie

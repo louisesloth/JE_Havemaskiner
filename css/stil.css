@@ -86,8 +86,12 @@ p {
   font-family: "Josefin Sans", SansSerif;
   font-size: 1.2rem; }
 
-footer img {
-  max-width: 50%;
-  margin: 0% 25%; }
+footer {
+  background-color: #13A512;
+  max-height: 115px;
+  display: flex;
+  justify-content: space-between; }
+  footer img, footer article {
+    max-height: 113px; }
 
 /*# sourceMappingURL=stil.css.map */
