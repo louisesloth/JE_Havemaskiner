@@ -127,7 +127,7 @@ button{
 html {
   font-size: 62.5%; //1rem=10px
 }
-a {
+nav, a {
   text-decoration: none;
   color: #000;
   font-size: 1.4rem;
@@ -136,16 +136,19 @@ h1 {
   font-family: "Josefin Sans SemiBold", SansSerif;
   font-size: 2rem;
 }
-p {
+h2 {
+  font-family: "Josefin Sans SemiBold", SansSerif;
+  font-size: 1.3rem;
+}
+p, span, a, address {
   font-family: "Josefin Sans", SansSerif;
   font-size: 1.2rem;
+  font-style: normal; //span og address default er italic
 }
 
 footer {
   background-color: $green;
-  max-height: 115px;
-  display: flex;
-  justify-content: space-between;
+  display: block;
   img, article{
     max-height: 113px;
   }
@@ -154,7 +157,11 @@ footer {
 
 //forside Louise
 body #forside {
-  
+  main {
+    background-color: lime;
+    height: 600px;
+    width: 100%;
+  }
 }
 //forside Louise slut
 

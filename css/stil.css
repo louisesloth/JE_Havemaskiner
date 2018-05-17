@@ -73,7 +73,7 @@ button {
 html {
   font-size: 62.5%; }
 
-a {
+nav, a {
   text-decoration: none;
   color: #000;
   font-size: 1.4rem; }
@@ -82,16 +82,24 @@ h1 {
   font-family: "Josefin Sans SemiBold", SansSerif;
   font-size: 2rem; }
 
-p {
+h2 {
+  font-family: "Josefin Sans SemiBold", SansSerif;
+  font-size: 1.3rem; }
+
+p, span, a, address {
   font-family: "Josefin Sans", SansSerif;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  font-style: normal; }
 
 footer {
   background-color: #13A512;
-  max-height: 115px;
-  display: flex;
-  justify-content: space-between; }
+  display: block; }
   footer img, footer article {
     max-height: 113px; }
+
+body #forside main {
+  background-color: lime;
+  height: 600px;
+  width: 100%; }
 
 /*# sourceMappingURL=stil.css.map */
