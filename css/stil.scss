@@ -4,19 +4,25 @@ $green: #13A512;
 $lime:  #7FCC1C;
 
 header {
-
-display: flex;
-justify-content: space-between;
-
   img {
-    max-width: 50%;
+    max-width: 80%;
+    margin: 0% 10%;
   }
+}
 
 nav {
+  width: 100%;
+  z-index: 5;
+
   //burgermenu ikon
   .container {
     display: inline-block;
     cursor: pointer;
+
+  }
+
+  i {
+    padding-left: 90%;
   }
 
   .bar1, .bar2, .bar3 {
@@ -25,6 +31,7 @@ nav {
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
+
   }
 
   //!* Rotate first bar *!
@@ -50,6 +57,7 @@ nav {
     overflow: hidden;
     font-family: "Josefin Sans";
     margin-right: 10rem;
+    width: 100%;
   }
 
   //!* Links inside the navbar *!
@@ -64,7 +72,7 @@ nav {
 
   //!* The dropdown container *!
   .dropdown {
-    float: left;
+    float: right;
     overflow: hidden;
   }
 
@@ -85,9 +93,9 @@ nav {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 5;
   }
 
   //!* Links inside the dropdown *!
@@ -106,7 +114,7 @@ nav {
   }
 
 }
-}
+
 
 .desktop {
   display: none; //flex under mediaquery
@@ -127,7 +135,7 @@ button{
 html {
   font-size: 62.5%; //1rem=10px
 }
-nav, a {
+nav a {
   text-decoration: none;
   color: #000;
   font-size: 1.4rem;
@@ -138,30 +146,138 @@ h1 {
 }
 h2 {
   font-family: "Josefin Sans SemiBold", SansSerif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 p, span, a, address {
   font-family: "Josefin Sans", SansSerif;
   font-size: 1.2rem;
   font-style: normal; //span og address default er italic
+  text-decoration: none; //a default er understreget
 }
 
 footer {
   background-color: $green;
-  display: block;
-  img, article{
-    max-height: 113px;
+  width: 100%;
+  padding: 1rem;
+  margin: 0% -1rem;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+  img{
+    max-width: 50%;
+    margin: 0 25%;
   }
 }
 //overordnet Louise slut
 
 //forside Louise
 body #forside {
-  main {
-    background-color: lime;
-    height: 600px;
-    width: 100%;
+
+  video {
+    max-width: 100%;
   }
+
+  //service dias
+  * {
+    box-sizing: border-box
+    /*border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;*/
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    z-index: 4;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  img{
+    z-index: 3;
+    max-width: 50%;
+    margin: 0 25%;
+  }
+
+/*  /2714 {
+    color: $lime;
+  }*/
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  // service dias slut
 }
 //forside Louise slut
 
