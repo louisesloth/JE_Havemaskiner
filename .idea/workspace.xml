@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2f6c5a9-deee-4a03-9287-8b419aaedbe8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stil.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stil.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stil.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/stil.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stil.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/stil.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produkter.html" beforeDir="false" afterPath="$PROJECT_DIR$/produkter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/script.js" afterDir="false" />
-    </list>
+    <list default="true" id="d2f6c5a9-deee-4a03-9287-8b419aaedbe8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,12 +150,12 @@
       <workItem from="1527151953543" duration="8461000" />
       <workItem from="1527182818634" duration="34000" />
       <workItem from="1527182880443" duration="9426000" />
-      <workItem from="1527230820650" duration="8079000" />
+      <workItem from="1527230820650" duration="8347000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64546000" />
+    <option name="totallyTimeSpent" value="64814000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="916" extended-state="7" />
