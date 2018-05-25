@@ -1,17 +1,17 @@
 $(document).ready(function () {
 
-    // nav mobil
+    // nav mobil louise
     $("i .container").click(function () {
 
         $(this).toggleClass("change"); //får burgermenuen til at skifte til et kryds og omvendt
         $(".dropdown-content").toggle(); //åbner og lukker dropdownmenu
 
     });
-    // nav mobil slut
+    // nav mobil louise slut
 
 });
 
-//service dias
+//service dias louise
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -40,4 +40,4 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
-//service dias slut
+//service dias louise slut
