@@ -1,11 +1,86 @@
-header, nav {
-  display: flex;
-  justify-content: space-around; }
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+header img {
+  max-width: 80%;
+  margin: 0% 10%; }
+
+nav {
+  width: 100%;
+  z-index: 5; }
+  nav .container {
+    display: inline-block;
+    cursor: pointer; }
+  nav i {
+    padding-left: 90%; }
+  nav .bar1, nav .bar2, nav .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s; }
+  nav .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  nav .change .bar2 {
+    opacity: 0; }
+  nav .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px); }
+  nav .navbar {
+    overflow: hidden;
+    font-family: "Josefin Sans";
+    margin-right: 10rem;
+    width: 100%; }
+  nav .navbar a {
+    float: left;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; }
+  nav .dropdown {
+    float: right;
+    overflow: hidden; }
+  nav .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0; }
+  nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 5; }
+  nav .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; }
+  nav .dropdown-content a:hover {
+    background-color: #7FCC1C; }
+
+.desktop {
+  display: none; }
+
+ul {
+  list-style-type: none;
+  background: lightblue;
+  padding-left: 0; }
+
+button {
+  padding: 0; }
 
 html {
   font-size: 62.5%; }
 
-a {
+nav a {
   text-decoration: none;
   color: #000;
   font-size: 1.4rem; }
@@ -14,13 +89,121 @@ h1 {
   font-family: "Josefin Sans SemiBold", SansSerif;
   font-size: 2rem; }
 
-p {
+h2 {
+  font-family: "Josefin Sans SemiBold", SansSerif;
+  font-size: 1.5rem; }
+
+p, span, a, address {
   font-family: "Josefin Sans", SansSerif;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  font-style: normal;
+  text-decoration: none; }
 
 footer {
-  background-color: #286628;
-  p: #fff; }
+  background-color: #13A512;
+  width: 100%;
+  padding: 1rem;
+  margin: 0% -1rem;
+  color: #fff; }
+  footer a {
+    color: #fff; }
+  footer img {
+    max-width: 50%;
+    margin: 0 25%; }
+
+body #forside {
+  /* Slideshow container */
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /*  /2714 {
+      color: $lime;
+    }*/
+  /* The dots/bullets/indicators */
+  /* Fading animation */ }
+  body #forside video {
+    max-width: 100%; }
+  body #forside * {
+    box-sizing: border-box; }
+  body #forside .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto; }
+  body #forside .mySlides {
+    display: none; }
+  body #forside .prev, body #forside .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    z-index: 4; }
+  body #forside .next {
+    right: 0;
+    border-radius: 3px 0 0 3px; }
+  body #forside .prev:hover, body #forside .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
+  body #forside img {
+    z-index: 3;
+    max-width: 50%;
+    margin: 0 25%; }
+  body #forside .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+  body #forside .active, body #forside .dot:hover {
+    background-color: #717171; }
+  body #forside .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s; }
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+
+.butik {
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  display: flex; }
+
+.profil {
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  display: flex; }
+
+.om {
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  justify-content: center; }
+
+@media screen and (min-width: 700px) {
+  .om {
+    font-size: 1.4em; } }
+@media screen and (min-width: 1100px) {
+  .om {
+    font-size: 1.6em; } }
 
 #container1, #container2, #container3 {
   display: flex;
