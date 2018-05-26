@@ -10,3 +10,57 @@ footer {
   background-color: #286628;
   p: #fff;
 }
+.tilbudbilledet{
+  padding: 15px;
+}
+
+<<<<<<< Updated upstream
+@media screen and (min-width: 700px){
+  .tilbudside{
+    display: grid;
+    grid-template-columns: auto 45% 20px 45% auto;
+    grid-template-areas:  ". header header header ."
+    ". selvetilbud . billedet ."
+    ". footer footer footer .";
+
+    header{
+      grid-area: header;
+    }
+    .selvetilbud {
+      grid-area: selvetilbud;
+    }
+    .biledet{
+      grid-area: billedet;
+    }
+    footer{
+      grid-area: footer;
+    }
+  }}
+
+
+
+
+
+
+@media screen and (min-width: 1100px) {
+  .tilbudside {
+    display: grid;
+    grid-template-columns: auto 45% 20px 45% auto;
+    grid-template-areas: ". header header header ."
+    ". selvetilbud . billedet ."
+    ". footer footer footer .";
+
+    header {
+      grid-area: header;
+    }
+
+    .selvetilbud {
+      grid-area: selvetilbud;
+    }
+    .biledet {
+      grid-area: billedet;
+    }
+    footer {
+      grid-area: footer;
+    }
+  }}
