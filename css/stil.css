@@ -162,9 +162,9 @@ body #forside {
     text-decoration: none; }
   body #forside button.ring {
     background-color: #7FCC1C; }
-    body #forside button.ring span {
+    body #forside button.ring span, body #forside button.ring a {
       color: buttonface; }
-  body #forside button.mail span {
+  body #forside button.mail a, body #forside button.mail adress {
     color: #7FCC1C; }
   body #forside .dot {
     cursor: pointer;
@@ -295,9 +295,11 @@ body #forside {
   nav {
     background-color: #13A512;
     padding: 1.5rem;
-    color: #ffffff;
     margin-bottom: 2%;
+    margin-left: -1%;
     width: 100%; }
+    nav a {
+      color: #ffffff; }
 
   body #forside video {
     max-width: 50%;

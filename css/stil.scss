@@ -253,13 +253,13 @@ button {
 }
   button.ring {
     background-color: $lime;
-    span {
+    span, a {
       color: buttonface;
     }
   }
 
 button.mail {
-  span {
+  a, adress {
     color: $lime;
   }
   }
@@ -446,9 +446,12 @@ button.mail {
   nav {
     background-color: $green;
     padding: 1.5rem;
-    color: #ffffff;
     margin-bottom: 2%;
+    margin-left: -1%;
     width: 100%;
+    a {
+      color: #ffffff;
+    }
   }
   body #forside video {
     max-width: 50%;
