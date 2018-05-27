@@ -242,11 +242,27 @@ body #forside {
     max-width: 50%;
     margin: 0 25%;
   }
-
-button {
-  background-color: $lime;
-  color: #ffffff;
+knapper{
+  display: flex;
+  justify-content: space-around;
 }
+button {
+  border-radius: 0.6rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+  button.ring {
+    background-color: $lime;
+    span {
+      color: buttonface;
+    }
+  }
+
+button.mail {
+  span {
+    color: $lime;
+  }
+  }
 
   /* The dots/bullets/indicators */
   .dot {
@@ -378,76 +394,6 @@ button {
   margin-left: -45px;
 }
 
-/* landscape tablets  */
-@media (min-width: 700px) {
-  #container1, #container2, #container3 {
-    display: flex;
-    margin: 10px auto;
-    width: 100%;//340px;
-  }
-
-  .inner-slider1, .inner-slider2, .inner-slider3 {
-    // width and height should be the same dimensions as the images
-    width: 100%;//340px;
-    height: 75%;//250px;
-    border: red solid 1px;
-    display: flex;
-    // position: relative;
-    // float: left;
-    // overflow: hidden;
-    padding: 3px;
-  }
-
-  .inner-slider1 .mytext, .inner-slider2 .mytext, .inner-slider3 .mytext {
-    display: flex;
-    flex-direction: column;//row;
-    // width and height should be the same dimensions as the images
-    width: 33.3%;//100%//340
-    height: 250px;//75%
-    border: 1px solid orange;
-    margin: auto;
-  }
-
-  .prev1, .next1, .prev2, .next2, .prev3, .next3 {
-    display: none;
-  }
-}
-
-
-/* desktops */
-@media (min-width: 1100px) {
-  #container1, #container2, #container3 {
-    display: flex;
-    margin: 10px auto;
-    width: 100%;//340px;
-  }
-
-  .inner-slider1, .inner-slider2, .inner-slider3 {
-    // width and height should be the same dimensions as the images
-    width: 100%;//340px;
-    height: 75%;//250px;
-    border: red solid 1px;
-    display: flex;
-    // position: relative;
-    // float: left;
-    // overflow: hidden;
-    padding: 3px;
-  }
-
-  .inner-slider1 .mytext, .inner-slider2 .mytext, .inner-slider3 .mytext {
-    display: flex;
-    flex-direction: column;//row;
-    // width and height should be the same dimensions as the images
-    width: 33.3%;//450px;//100%
-    height: 300px;//75%
-    border: 1px solid orange;
-    margin: auto;
-  }
-
-  .prev1, .next1, .prev2, .next2, .prev3, .next3 {
-    display: none;
-  }
-}
 //produkter Ivan slut
 
 //tilbud Anders
@@ -498,18 +444,28 @@ button {
     justify-content: space-between;
   }
   nav {
-    background-color: $darkgreen;
+    background-color: $green;
     padding: 1.5rem;
     color: #ffffff;
+    margin-bottom: 2%;
+    width: 100%;
   }
   body #forside video {
     max-width: 50%;
     margin: 0 25%;
   }
-  .kasse{
+  body #forside .kasse{
     padding: 10px;
     border: 1px solid $darkgreen;
-    margin: 0 10%;
+    margin: 2% 0.3%;
+  }
+  footer{
+    display: flex;
+    justify-content: flex-start;
+    img {
+      height: 185px;
+      width: inherit;
+    }
   }
   //overordnet og forside louise slut
   //om jessica
