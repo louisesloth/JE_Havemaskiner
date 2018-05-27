@@ -43,6 +43,39 @@
 <!--Louise slut-->
 <!--Niklas-->
 <main>
+    <body class="kontakt">
+
+    <h1> Kontakt os her</h1>
+    <p> på telefon: +45 71200831</p>
+    <p> eller på Email: jemaskinservice@gmail.com</p>
+    <p> kan kontaktes fra mandag til lørdag, forvent svar inden for 24 timer, på disse dage.</p>
+    <p> eller hvis du er i nærheden af Maribo så kom ned til butikken her: Østre Landevej 9A</p>
+
+    <style>
+        #map {
+            width: 30%;
+            height: 230px;
+        }
+    </style>
+
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var Maribo = {lat: 54.7754319, lng: 11.51161669999999};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: Maribo
+            });
+            var marker = new google.maps.Marker({
+                position: Maribo,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkhilaVEKZhzJJ3wkPpzl-exk_4jqA6IQ&callback=initMap">
+    </script>
+    </body>
 </main>
 <!--Niklas slut-->
 <!--Louise-->
