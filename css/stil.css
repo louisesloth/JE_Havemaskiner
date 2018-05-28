@@ -1,26 +1,213 @@
-header, nav {
-  display: flex;
-  justify-content: space-around; }
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+header img {
+  max-width: 80%;
+  margin: 0 10%; }
+
+nav.mobil {
+  width: 100%;
+  z-index: 5; }
+  nav.mobil .container {
+    display: inline-block;
+    cursor: pointer; }
+  nav.mobil i {
+    padding-left: 90%; }
+  nav.mobil .bar1, nav.mobil .bar2, nav.mobil .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s; }
+  nav.mobil .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  nav.mobil .change .bar2 {
+    opacity: 0; }
+  nav.mobil .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px); }
+  nav.mobil .navbar {
+    overflow: hidden;
+    font-family: "Josefin Sans", sans-serif;
+    margin-right: 10rem;
+    width: 100%; }
+  nav.mobil .navbar a {
+    float: left;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; }
+  nav.mobil .dropdown {
+    float: right;
+    overflow: hidden; }
+  nav.mobil .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #000000;
+    padding: 14px 16px;
+    font-family: inherit;
+    margin: 0; }
+  nav.mobil .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 5; }
+  nav.mobil .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; }
+  nav.mobil .dropdown-content a:hover {
+    background-color: #7FCC1C; }
+
+.desktop {
+  display: none; }
+
+ul {
+  list-style-type: none;
+  background: lightblue;
+  padding-left: 0; }
+
+button {
+  padding: 0; }
 
 html {
   font-size: 62.5%; }
 
-a {
+nav a {
   text-decoration: none;
   color: #000;
   font-size: 1.4rem; }
 
 h1 {
-  font-family: "Josefin Sans SemiBold", SansSerif;
+  font-family: "Josefin Sans SemiBold", sans-serif;
   font-size: 2rem; }
 
-p {
-  font-family: "Josefin Sans", SansSerif;
-  font-size: 1.2rem; }
+h2 {
+  font-family: "Josefin Sans SemiBold", sans-serif;
+  font-size: 1.5rem; }
+
+p, span, a, address {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  text-decoration: none; }
 
 footer {
-  background-color: #286628;
-  p: #fff; }
+  background-color: #13A512;
+  width: 100%;
+  padding: 1rem;
+  margin: 0% -1rem;
+  color: #fff; }
+  footer a {
+    color: #fff; }
+  footer img {
+    max-width: 50%;
+    margin: 0 25%; }
+
+body #forside {
+  /* Slideshow container */
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* The dots/bullets/indicators */
+  /* Fading animation */ }
+  body #forside video {
+    max-width: 100%; }
+  body #forside * {
+    box-sizing: border-box; }
+  body #forside .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto; }
+  body #forside .mySlides {
+    display: none; }
+  body #forside .prev, body #forside .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    z-index: 4; }
+  body #forside .next {
+    right: 0;
+    border-radius: 3px 0 0 3px; }
+  body #forside .prev:hover, body #forside .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
+  body #forside .kasse {
+    padding: 10px;
+    border: 1px solid #286628;
+    margin: 0 10%; }
+  body #forside img {
+    z-index: 3;
+    max-width: 50%;
+    margin: 0 25%; }
+  body #forside knapper {
+    display: flex;
+    justify-content: space-around; }
+  body #forside button {
+    border-radius: 0.6rem;
+    padding: 1rem;
+    text-decoration: none; }
+  body #forside button.ring {
+    background-color: #7FCC1C; }
+    body #forside button.ring span, body #forside button.ring a {
+      color: buttonface; }
+  body #forside button.mail a, body #forside button.mail adress {
+    color: #7FCC1C; }
+  body #forside .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+  body #forside .active, body #forside .dot:hover {
+    background-color: #717171; }
+  body #forside .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s; }
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+.butik {
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  display: flex; }
+
+.profil {
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  display: flex; }
+
+.om {
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  justify-content: center; }
 
 main {
   margin-left: 10px; }
@@ -75,8 +262,14 @@ main {
   position: relative;
   margin-left: -45px; }
 
-/* landscape tablets  */
-@media (min-width: 700px) {
+.tilbudbilledet {
+  padding: 15px; }
+
+@media screen and (min-width: 700px) {
+  .om {
+    font-size: 1.4em; }
+
+  /* landscape tablets  */
   #container1, #container2, #container3 {
     display: flex;
     margin: 10px auto;
@@ -122,9 +315,57 @@ main {
     background-color: lightgrey; }
 
   .prev1, .next1, .prev2, .next2, .prev3, .next3 {
-    display: none; } }
-/* desktops */
-@media (min-width: 1100px) {
+    display: none; }
+
+  .tilbudside {
+    display: grid;
+    grid-template-columns: auto 45% 20px 45% auto;
+    grid-template-areas: ". header header header ." ". selvetilbud . billedet ." ". footer footer footer ."; }
+    .tilbudside header {
+      grid-area: header; }
+    .tilbudside .selvetilbud {
+      grid-area: selvetilbud; }
+    .tilbudside .biledet {
+      grid-area: billedet; }
+    .tilbudside footer {
+      grid-area: footer; } }
+@media screen and (min-width: 700px) and (min-width: 1100px) {
+  .mobil {
+    display: none; }
+
+  .desktop {
+    display: flex;
+    justify-content: space-between; }
+
+  nav {
+    background-color: #13A512;
+    padding: 1.5rem;
+    margin-bottom: 2%;
+    margin-left: -1%;
+    width: 100%; }
+    nav a {
+      color: #ffffff; }
+
+  body #forside video {
+    max-width: 50%;
+    margin: 0 25%; }
+
+  body #forside .kasse {
+    padding: 10px;
+    border: 1px solid #286628;
+    margin: 2% 0.3%; }
+
+  footer {
+    display: flex;
+    justify-content: flex-start; }
+    footer img {
+      height: 185px;
+      width: inherit; }
+
+  .om {
+    font-size: 1.6em; }
+
+  /* desktops */
   #container1, #container2, #container3 {
     display: flex;
     margin: 10px auto;
@@ -171,5 +412,18 @@ main {
 
   .prev1, .next1, .prev2, .next2, .prev3, .next3 {
     display: none; } }
+@media screen and (min-width: 700px) {
+  .tilbudside {
+    display: grid;
+    grid-template-columns: auto 45% 20px 45% auto;
+    grid-template-areas: ". header header header ." ". selvetilbud . billedet ." ". footer footer footer ."; }
+    .tilbudside header {
+      grid-area: header; }
+    .tilbudside .selvetilbud {
+      grid-area: selvetilbud; }
+    .tilbudside .biledet {
+      grid-area: billedet; }
+    .tilbudside footer {
+      grid-area: footer; } }
 
 /*# sourceMappingURL=stil.css.map */
