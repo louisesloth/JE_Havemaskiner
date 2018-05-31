@@ -153,7 +153,7 @@ body #forside {
     z-index: 3;
     max-width: 50%;
     margin: 0 25%; }
-  body #forside knapper {
+  body #forside .knapper {
     display: flex;
     justify-content: space-around; }
   body #forside button {
@@ -164,7 +164,7 @@ body #forside {
     background-color: #7FCC1C; }
     body #forside button.ring span, body #forside button.ring a {
       color: buttonface; }
-  body #forside button.mail a, body #forside button.mail adress {
+  body #forside button.mail a, body #forside button.mail address {
     color: #7FCC1C; }
   body #forside .dot {
     cursor: pointer;
@@ -192,6 +192,19 @@ body #forside {
     opacity: 0.4; }
   to {
     opacity: 1; } }
+body.omos main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "om-text         om-text" "je                   je" "om2                 om2" "om-billeder om-billeder"; }
+  body.omos main .je {
+    grid-area: je; }
+  body.omos main .om-text {
+    grid-area: om-text; }
+  body.omos main .om2 {
+    grid-area: om2; }
+  body.omos main .om-billeder {
+    grid-area: om-billeder; }
+
 .butik {
   height: auto;
   width: 100%;
@@ -206,8 +219,9 @@ body #forside {
 
 .om {
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8em;
   display: flex;
-  justify-content: center; }
+  justify-content: left; }
 
 #container1, #container2, #container3 {
   display: flex;
@@ -262,7 +276,26 @@ body #forside {
 
 @media screen and (min-width: 700px) {
   .om {
-    font-size: 1.4em; }
+    font-size: 2.1em;
+    display: flex;
+    justify-content: left; }
+
+  body.omos main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "om-text         om-text" "je                   je" "om2                 om2" "om-billeder om-billeder"; }
+    body.omos main .je {
+      grid-area: je; }
+    body.omos main .om-text {
+      grid-area: om-text; }
+    body.omos main .om2 {
+      grid-area: om2; }
+    body.omos main .om-billeder {
+      grid-area: om-billeder; }
+    body.omos main .profil {
+      margin: 2px; }
+    body.omos main .butik {
+      margin: 2px; }
 
   /* landscape tablets  */
   #container1, #container2, #container3 {
@@ -333,8 +366,24 @@ body #forside {
       height: 185px;
       width: inherit; }
 
-  .om {
-    font-size: 1.6em; }
+  body.omos main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "om-text         om-text" "je                   je" "om2                 om2" "om-billeder om-billeder"; }
+    body.omos main .je {
+      grid-area: je; }
+    body.omos main .om-text {
+      grid-area: om-text; }
+    body.omos main .om2 {
+      grid-area: om2; }
+    body.omos main .om-billeder {
+      grid-area: om-billeder; }
+    body.omos main .profil {
+      margin: 2px; }
+    body.omos main .butik {
+      margin: 2px; }
+    body.omos main .om {
+      font-size: 2.5em; }
 
   /* desktops */
   #container1, #container2, #container3 {
@@ -358,19 +407,17 @@ body #forside {
     margin: auto; }
 
   .prev1, .next1, .prev2, .next2, .prev3, .next3 {
-    display: none; } }
-@media screen and (min-width: 700px) {
+    display: none; }
+
   .tilbudside {
     display: grid;
     grid-template-columns: auto 45% 20px 45% auto;
     grid-template-areas: ". header header header ." ". selvetilbud . billedet ." ". footer footer footer ."; }
-    .tilbudside header {
-      grid-area: header; }
-    .tilbudside .selvetilbud {
-      grid-area: selvetilbud; }
-    .tilbudside .biledet {
-      grid-area: billedet; }
-    .tilbudside footer {
-      grid-area: footer; } }
+
+  .selvetilbud {
+    grid-area: selvetilbud; }
+
+  .biledet {
+    grid-area: billedet; } }
 
 /*# sourceMappingURL=stil.css.map */
