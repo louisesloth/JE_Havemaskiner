@@ -452,7 +452,7 @@ main {
   background-color: $lime;
   cursor: pointer;
 }
-/////XXXXXXXXXXXXXXXXXXXXX
+
 
 .mydots {
   display: flex;
@@ -478,6 +478,84 @@ main {
 /*.active, .dot:hover {
   background-color: #717171;
 }*/
+
+/* css til underside1, underside2, underside3 mobil*/
+.main_underside {
+  margin: auto;
+  width: 90%;
+}
+
+.underside {
+  width: 100%;
+  height: 75%;//280px;
+}
+
+.underside img {
+  width: 100%;
+  height: 75%;//280px;
+  border: 1px solid blueviolet;
+}
+
+// descriptive text about product
+.description {//description
+  font-size: 30px;
+}
+
+.tabs {
+  font-size: small;
+}
+.words, .words1 {
+  font-size: large;
+}
+
+.tab-panels ul {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+.tab-panels ul li {
+  list-style-type: none;
+  display: inline-block;
+  background: #999;
+  margin: 0;
+  padding: 3px 10px;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.tab-panels ul li:hover {
+  color: #fff;
+  background: #666;
+}
+
+.tab-panels ul li.active {
+  color: #fff;
+  background: #666;
+}
+
+.tab-panels .panel {
+  display: none;
+  background: #c9c9c9;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.tab-panels .panel.active {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid gray;
+  text-align: center;
+}
 
 //produkter Ivan slut
 /* landscape tablets  */
@@ -526,6 +604,7 @@ main {
     text-decoration: none;
     background-color: $lime;
     cursor: pointer;
+    width:50%;
   }
 
   .inner-slider1 .mytext .mytext_link {
@@ -563,6 +642,88 @@ main {
   }
 }
 
+/* css til underside1, underside2, underside3 tablet*/
+.main_underside {
+  margin: auto;
+  width: 90%;
+}
+
+.underside {
+  width: 80%;//100%;
+  height: 75%;//280px;
+  margin: auto;
+}
+
+.underside img {
+  width: 100%;
+  height: 75%;//280px;
+  border: 1px solid blueviolet;
+}
+
+// descriptive text about product
+.description {//description
+  font-size: 30px;
+}
+
+.words, .words1, .tabs {
+  font-size: large;
+}
+
+.tab-panels {
+  width: 80%;
+  margin: auto;
+}
+
+.tab-panels ul {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+.tab-panels ul li {
+  list-style-type: none;
+  display: inline-block;
+  background: #999;
+  margin: 0;
+  padding: 3px 10px;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.tab-panels ul li:hover {
+  color: #fff;
+  background: #666;
+}
+
+.tab-panels ul li.active {
+  color: #fff;
+  background: #666;
+}
+
+.tab-panels .panel {
+  display: none;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  //width: 80%;
+  //margin: auto;
+}
+
+.tab-panels .panel.active {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid gray;
+  text-align: center;
+}
 
 //tilbud Anders
 .tilbudbilledet{
@@ -640,6 +801,7 @@ main {
     text-decoration: none;
     background-color: $lime;
     cursor: pointer;
+    width:50%;
   }
 
   .inner-slider1 .mytext .mytext_link {
@@ -674,6 +836,99 @@ main {
   .prev1, .next1, .prev2, .next2, .prev3, .next3 {
     display: none;
   }
+
+  /* css til underside1, underside2, underside3 desktop */
+
+  .main_underside {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    // border: 1px solid red;
+  }
+
+  .underside {
+    width: 50%;//500px;//80%;//100%;
+    height: 500px;//280px;
+    // background: greenyellow;
+  }
+
+  .underside img {
+    width: 100%;
+    height: 75%;//280px;
+    border: 1px solid blueviolet;
+    //margin-left: 50px;
+  }
+
+  // descriptive text about product
+  .description {//description
+    font-size: 30px;
+    //margin-left: 50px;
+  }
+
+  .words, .words1, .tabs {
+    font-size: large;
+
+  }
+
+  .tab-panels {
+    //border: 1px solid green;
+    width: 50%;
+    margin-top: 0;
+    margin-left: 3px;
+    background: white;
+  }
+  .tab-panels ul {
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+
+  .tab-panels ul li {
+    list-style-type: none;
+    display: inline-block;
+    background: #999;
+    margin: 0;
+    padding: 3px 10px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-weight: 200;
+    cursor: pointer;
+  }
+
+  .tab-panels ul li:hover {
+    color: #fff;
+    background: #666;
+  }
+
+  .tab-panels ul li.active {
+    color: #fff;
+    background: #666;
+  }
+
+  .tab-panels .panel {
+    display: none;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    // width: 500px;
+  }
+
+  .tab-panels .panel.active {
+    display: block;
+    // width: 500px;
+    // background: yellow;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td {
+    border: 1px solid gray;
+    text-align: center;
+  }
+
   //produkter ivan
   //tilbud anders
   .tilbudside {
