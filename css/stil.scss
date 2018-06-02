@@ -202,7 +202,7 @@ body #forside {
 
   /* Hide the images by default */
   .mySlides {
-    display: none;
+    // display: none;
   }
 
   /* Next & previous buttons */
@@ -357,68 +357,397 @@ body.omos main {
 //om Jessie slut
 
 //produkter Ivan
+main {
+  margin-left: 10px;
+}
+
 #container1, #container2, #container3 {
-  display: flex;
+  // display: flex;// changed to none
+  display: none;
   // margin: 1px auto;
   margin: auto;
   width: 100%;//340px;
   height: 75%;
+  border: 1px solid green;
 }
-.inner-slider1, .inner-slider2, .inner-slider3 {
-  // width and height should be the same dimensions as the images
-  width: 100%;//340px;
-  height: 75%;//250px;
-  border: red solid 1px;
+
+/* new code for mobile */
+.mymobile1 .slideshow-container1, .mymobile2 .slideshow-container2, .mymobile3 .slideshow-container3 {
+  max-width: 100%;
   position: relative;
-  // float: left;
-  overflow: hidden;
-  // padding: 3px;
+  margin: auto;
 }
 
-.mytext {
-  display: flex;
-  flex-direction: column;
-  background: lightblue;
-  width: 100%;
-  height: 75%;
+/* hide the images by default */
+.mymobile1 .mySlides1, .mymobile2 .mySlides2, .mymobile3 .mySlides3 {
+  // display: none;
 }
 
-.mytext img {
-  width: 100%;
-  height: 75%;
-  border: 1px solid blue;
+/*.fade1, .fade2, .fade3 {
+
+}*/
+
+.kasse1, .kasse2, .kasse3 {
+  padding: 10px;
+  border: 1px solid $darkgreen;
+  margin: 0 10%;
 }
 
-.inner-slider1 .mytext, .inner-slider2 .mytext, .inner-slider3 .mytext {
-  display: none;
-  // width and height should be the same dimensions as the images
-  width: 100%;//340px;
-  height: 75%;//250px;
-  border: 1px solid orange;
+/* Next & previous buttons */
+.mymobile1 .prev1, .mymobile1 .next1, .mymobile2 .prev2, .mymobile2 .next2, .mymobile3 .prev3, .mymobile3 .next3 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  z-index: 4;
 }
 
-.inner-slider1 .mytext.active1, .inner-slider2 .mytext.active2, .inner-slider3 .mytext.active3 {
-  display: flex;
+/* Position the "next button" to the right */
+.mymobile1 .next1, .mymobile2 .next2, .mymobile3 .next3 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.prev1, .next1, .prev2, .next2, .prev3, .next3 {
-  float: left;
-  margin-top: 25%;//130px;
+/* On hover, add a black background color with a little bit see-through */
+.mymobile1 .prev1:hover, .mymobile1 .next1:hover, .mymobile2 .prev2:hover, .mymobile2 .next2:hover, .mymobile3 .prev3:hover, .mymobile3 .next3:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mymobile1 .slideshow-container1 .mySlides1 img, .mymobile2 .slideshow-container2 .mySlides2 img, .mymobile3 .slideshow-container3 .mySlides3 img{
+  z-index: 3;
+  max-width: 50%;
+  margin: 0 25%;
+}
+
+/* The dots/bullets/indicators */
+.mymobile1 .dot1, .mymobile2 .dot2, .mymobile3 .dot3 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  text-align: center;
+}
+
+.mymobile1 .active1, .dot1:hover, .mymobile2 .active2, .dot2:hover, .mymobile3 .active3, .dot3:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.mymobile1 .fade, .mymobile2 .fade, .mymobile3 .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.mymobile1 button, .mymobile2 button, .mymobile3 button {
+  border-radius: 0.6rem;
+  padding: 1rem;
+  text-decoration: none;
+  background-color: $lime;
   cursor: pointer;
 }
 
-.prev1, .prev2, .prev3 {
-  position: relative;
-  margin-right: -45px;
-  z-index: 100;
+
+.mydots {
+  display: flex;
+  // border: 1px solid blue;
+  width: 50px;
+  height: 15px;
+  margin-left: 45%;
+  // margin-right: 33%;
+  // text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot1, .dot2, .dot3 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  // margin: 0 10%;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: flex;
+  transition: background-color 0.6s ease;
 }
 
-.next1, .next2, .next3 {
-  position: relative;
-  margin-left: -45px;
+/*.active, .dot:hover {
+  background-color: #717171;
+}*/
+
+/* css til underside1, underside2, underside3 mobil*/
+.main_underside {
+  margin: auto;
+  width: 90%;
+}
+
+.underside {
+  width: 100%;
+  height: 75%;//280px;
+}
+
+.underside img {
+  width: 100%;
+  height: 75%;//280px;
+  border: 1px solid blueviolet;
+}
+
+// descriptive text about product
+.description {//description
+  font-size: 30px;
+}
+
+.tabs {
+  font-size: small;
+}
+.words, .words1 {
+  font-size: large;
+}
+
+.tab-panels ul {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+.tab-panels ul li {
+  list-style-type: none;
+  display: inline-block;
+  background: #999;
+  margin: 0;
+  padding: 3px 10px;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.tab-panels ul li:hover {
+  color: #fff;
+  background: #666;
+}
+
+.tab-panels ul li.active {
+  color: #fff;
+  background: #666;
+}
+
+.tab-panels .panel {
+  display: none;
+  background: #c9c9c9;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.tab-panels .panel.active {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid gray;
+  text-align: center;
 }
 
 //produkter Ivan slut
+/* landscape tablets  */
+@media (min-width: 700px) {
+
+  .mymobile1, .mymobile2, .mymobile3 {
+    display: none;
+  }
+
+  #container1, #container2, #container3 {
+    display: flex;
+    margin: 10px auto;
+    width: 100%; //340px;
+  }
+
+  .inner-slider1, .inner-slider2, .inner-slider3 {
+    // width and height should be the same dimensions as the images
+    width: 100%; //340px;
+    height: 75%; //250px;
+    // border: red solid 1px;
+    display: flex;
+    // position: relative;
+    // float: left;
+    // overflow: hidden;
+    padding: 3px;
+  }
+
+  .inner-slider1 .mytext, .inner-slider2 .mytext, .inner-slider3 .mytext {
+    display: flex;
+    flex-direction: column; //row;
+    // width and height should be the same dimensions as the images
+    width: 33.3%; //100%//340
+    height: 75%; //250px;//75%
+    // border: 1px solid orange;
+    margin: auto;
+  }
+
+  .mytext img {
+    width: 99%; //100%;
+    height: 238px; //75%;
+    // border: 1px solid blue;
+  }
+  .inner-slider1 button, .inner-slider2 button, .inner-slider3 button {
+    border-radius: 0.6rem;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: $lime;
+    cursor: pointer;
+    width:50%;
+  }
+
+  .inner-slider1 .mytext .mytext_link {
+    height: 238px; //75%;
+    // border: 1px solid blue;
+  }
+
+  .inner-slider1 .mytext .mytext_link a img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .inner-slider1 .mytext .text {
+    height: 100px; //25%;
+    // border: 1px solid red;
+  }
+
+  .mytext_link {
+    width: 99%; //100%;
+    height: 75%; //250px;
+  }
+
+  .text {
+    padding: 3px;
+    font-size: 12px;
+    text-align: center;
+    height: 100px; //25%;
+    width: 97%; //100%;
+    // background-color: lightgrey;
+    // border: 1px solid blueviolet;
+  }
+
+  .prev1, .next1, .prev2, .next2, .prev3, .next3 {
+    display: none;
+  }
+}
+
+/* css til underside1, underside2, underside3 tablet*/
+.main_underside {
+  margin: auto;
+  width: 90%;
+}
+
+.underside {
+  width: 80%;//100%;
+  height: 75%;//280px;
+  margin: auto;
+}
+
+.underside img {
+  width: 100%;
+  height: 75%;//280px;
+  border: 1px solid blueviolet;
+}
+
+// descriptive text about product
+.description {//description
+  font-size: 30px;
+}
+
+.words, .words1, .tabs {
+  font-size: large;
+}
+
+.tab-panels {
+  width: 80%;
+  margin: auto;
+}
+
+.tab-panels ul {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+.tab-panels ul li {
+  list-style-type: none;
+  display: inline-block;
+  background: #999;
+  margin: 0;
+  padding: 3px 10px;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.tab-panels ul li:hover {
+  color: #fff;
+  background: #666;
+}
+
+.tab-panels ul li.active {
+  color: #fff;
+  background: #666;
+}
+
+.tab-panels .panel {
+  display: none;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  //width: 80%;
+  //margin: auto;
+}
+
+.tab-panels .panel.active {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid gray;
+  text-align: center;
+}
 
 //tilbud Anders
 .tilbudbilledet{
@@ -432,6 +761,7 @@ body.omos main {
 @media screen and (min-width: 700px) {
   //om Jessie
   .om {
+
     font-size: 2.1em;
     display:flex;
     justify-content: left;
@@ -462,63 +792,231 @@ body.omos main {
     .butik {
       margin:2px;
     }
-  }
+
+    // font-size: 1.4em;
+
+
+  //}
 
   //om Jessie slut
 
   //produkter ivan
   /* landscape tablets  */
-    #container1, #container2, #container3 {
-      display: flex;
-      margin: 10px auto;
-      width: 100%; }
+  /*#container1, #container2, #container3 {
+    display: flex;
+    margin: 10px auto;
+    width: 100%;
+  }*/
 
-    .inner-slider1, .inner-slider2, .inner-slider3 {
-      width: 100%;
-      height: 75%;
-      border: red solid 1px;
-      display: flex;
-      padding: 3px; }
+}
+/* desktops */
+@media (min-width: 1100px) {
 
-    .inner-slider1 .mytext, .inner-slider2 .mytext, .inner-slider3 .mytext {
-      display: flex;
-      flex-direction: column;
-      width: 33.3%;
-      height: 250px;
-      border: 1px solid orange;
-      margin: auto; }
+  .mymobile1, .mymobile2, .mymobile3 {
+    display: none;
+  }
 
-    .prev1, .next1, .prev2, .next2, .prev3, .next3 {
-      display: none; }
+  #container1, #container2, #container3 {
+    display: flex;
+    margin: 10px auto;
+    width: 100%; //340px;
+    height: 550px;//510px
+    // border: 1px solid blueviolet;
+  }
+
+  .inner-slider1, .inner-slider2, .inner-slider3 {
+    // width and height should be the same dimensions as the images
+    width: 100%; //340px;
+    height: 540px;//505px;//75%; //450px;//75%;//250px;
+    // border: red solid 1px;
+
+    //.inner-slider1, .inner-slider2, .inner-slider3 {
+    // width: 100%;
+    //height: 75%;
+    //border: red solid 1px;
+    display: flex;
+    padding: 3px;
+  }
+
+  .inner-slider1 .mytext, .inner-slider2 .mytext, .inner-slider3 .mytext {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    height: 530px;//500px;//250px;
+    // border: 1px solid orange;
+    // margin: auto;
+    margin-top: 0;
+  }
+
+  .mytext img {
+    width: 99%;
+    height: 320px;//238px;//340px;//250px;
+    // border: 1px solid blue;
+  }
+
+  .inner-slider1 button, .inner-slider2 button, .inner-slider3 button {
+    border-radius: 0.6rem;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: $lime;
+    cursor: pointer;
+    width:50%;
+  }
+
+  .inner-slider1 .mytext .mytext_link {
+    height: 320px;//238px;//300px;//250px;
+  }
+
+  .inner-slider1 .mytext .mytext_link a img {
+    height: 100%;//300px;//100%;
+    width: 100%;
+
+  }
+
+  .inner-slider1 .mytext .text {
+    height: 100px;
+  }
+
+  .mytext_link {
+    width: 99%;
+    height: 75%;//300px;//250px;
+  }
+
+  .text {
+    padding: 3px;
+    font-size: 14px;//14px;
+    text-align: center;
+    height: 100px;
+    width: 98%;
+    // background: lightgrey;
+    // border: 1px solid blueviolet;
+  }
+
+  .prev1, .next1, .prev2, .next2, .prev3, .next3 {
+    display: none;
+  }
+
+  /* css til underside1, underside2, underside3 desktop */
+
+  .main_underside {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    // border: 1px solid red;
+  }
+
+  .underside {
+    width: 50%;//500px;//80%;//100%;
+    height: 500px;//280px;
+    // background: greenyellow;
+  }
+
+  .underside img {
+    width: 100%;
+    height: 75%;//280px;
+    border: 1px solid blueviolet;
+    //margin-left: 50px;
+  }
+
+  // descriptive text about product
+  .description {//description
+    font-size: 30px;
+    //margin-left: 50px;
+  }
+
+  .words, .words1, .tabs {
+    font-size: large;
+
+  }
+
+  .tab-panels {
+    //border: 1px solid green;
+    width: 50%;
+    margin-top: 0;
+    margin-left: 3px;
+    background: white;
+  }
+  .tab-panels ul {
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+
+  .tab-panels ul li {
+    list-style-type: none;
+    display: inline-block;
+    background: #999;
+    margin: 0;
+    padding: 3px 10px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-weight: 200;
+    cursor: pointer;
+  }
+
+  .tab-panels ul li:hover {
+    color: #fff;
+    background: #666;
+  }
+
+  .tab-panels ul li.active {
+    color: #fff;
+    background: #666;
+  }
+
+  .tab-panels .panel {
+    display: none;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    // width: 500px;
+  }
+
+  .tab-panels .panel.active {
+    display: block;
+    // width: 500px;
+    // background: yellow;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td {
+    border: 1px solid gray;
+    text-align: center;
+  }
+
   //produkter ivan
   //tilbud anders
-  .tilbudside{
+  .tilbudside {
     display: grid;
     grid-template-columns: auto 45% 20px 45% auto;
-    grid-template-areas:  ". header header header ."
-    ". selvetilbud . billedet ."
-    ". footer footer footer .";
+    grid-template-areas: ". header header header ." ". selvetilbud . billedet ." ". footer footer footer .";
 
-    header{
+    header {
       grid-area: header;
     }
     .selvetilbud {
       grid-area: selvetilbud;
     }
-    .biledet{
+    .billedet { //corrected this line
       grid-area: billedet;
     }
-    footer{
+    footer {
       grid-area: footer;
     }
     //tilbud anders slut
-}
+  }
+}// added this } to close desktop 1100
 @media screen and (min-width: 1100px) {
   //overordnet og forside louise
   .mobil {
     display: none;
   }
   .desktop {
+
     display: flex;
     justify-content: space-between;
   }
@@ -543,12 +1041,25 @@ body.omos main {
   }
   footer{
     display: flex;
+
+    flex-direction: column;//row;
+    // width and height should be the same dimensions as the images
+    width: 33.3%;//450px;//100%
+    height: 75%;//350px;//75%
+    // border: 1px solid green;
+    margin: auto;
+  }
+
+
+
+  /*.prev1, .next1, .prev2, .next2, .prev3, .next3 {
+    display: none;
     justify-content: flex-start;
     img {
       height: 185px;
       width: inherit;
     }
-  }
+  }*/
   //overordnet og forside louise slut
   //om jessie
   body.omos main {
@@ -584,7 +1095,7 @@ body.omos main {
   //om jessie slut
   //produkter ivan
   /* desktops */
-    #container1, #container2, #container3 {
+    /*#container1, #container2, #container3 {
       display: flex;
       margin: 10px auto;
       width: 100%; }
@@ -605,7 +1116,7 @@ body.omos main {
       margin: auto; }
 
     .prev1, .next1, .prev2, .next2, .prev3, .next3 {
-      display: none; }
+      display: none; }*/
   //produkter ivan slut
   //tilbud anders
   .tilbudside {
@@ -625,3 +1136,4 @@ body.omos main {
 
 //tilbud anders slut
 }
+//}// added this } to remove errors
