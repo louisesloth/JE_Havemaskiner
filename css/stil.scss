@@ -5,9 +5,13 @@ $lime:  #7FCC1C;
 
 
 header {
-  img {
-    max-width: 80%;
-    margin: 0 10%;
+  figure {
+    margin: 0;
+    img {
+      /*max-width: 80%;
+      margin: 0 10%;*/
+      width: 100%;
+    }
   }
 }
 
@@ -161,7 +165,7 @@ p, span, a, address {
 }
 
 footer {
-  background-color: $green;
+  background-color: $darkgreen;
   width: 100%;
   padding: 1rem;
   margin: 0% -1rem;
@@ -170,8 +174,7 @@ footer {
     color: #fff;
   }
   img{
-    max-width: 50%;
-    margin: 0 25%;
+    max-width: 100%;
   }
 }
 //overordnet Louise slut
@@ -242,7 +245,7 @@ body #forside {
     max-width: 50%;
     margin: 0 25%;
   }
-knapper{
+.knapper{
   display: flex;
   justify-content: space-around;
 }
@@ -406,6 +409,40 @@ button.mail {
 //kontakt Niklas slut
 
 @media screen and (min-width: 700px) {
+  //overordnet louise
+  header {
+    figure {
+      display: flex;
+      justify-content: center;
+      a {
+        display: inline-block;
+        img {
+          max-width: 768px;
+        }
+      }
+    }
+  }
+  footer {
+    figure {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      a {
+        //display: inline-block;
+        img {
+          max-width: 275px;
+        }
+      }
+    }
+  }
+/*  footer {
+    display: flex;
+    flex-direction: column;
+    img {
+
+    }
+  }*/
+  //overordnet louise slut
   //om jessica
   .om {
     font-size: 1.4em;
@@ -435,7 +472,7 @@ button.mail {
 
     .prev1, .next1, .prev2, .next2, .prev3, .next3 {
       display: none; }
-  //produkter ivan
+  //produkter ivan slut
   //tilbud anders
   .tilbudside{
     display: grid;
@@ -477,18 +514,29 @@ button.mail {
       color: #ffffff;
     }
   }
-  body #forside video {
+  body #forside video, body #video video {
     max-width: 50%;
     margin: 0 25%;
   }
   body #forside .kasse{
+    width: 20%;
     padding: 10px;
     border: 1px solid $darkgreen;
     margin: 2% 0.3%;
   }
   footer{
-    display: flex;
-    justify-content: flex-start;
+    #f1 {
+      display: flex;
+      justify-content: space-between;
+    }
+    figure {
+      flex-direction: row;
+    #f2 {
+      display: flex;
+      justify-content: space-around;
+      max-width: 100%;
+    }
+    }
     img {
       height: 185px;
       width: inherit;
@@ -548,4 +596,4 @@ button.mail {
     }
   }
 //tilbud anders slut
-}
+}}

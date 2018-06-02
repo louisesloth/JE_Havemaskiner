@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
-header img {
-  max-width: 80%;
-  margin: 0 10%; }
+header figure {
+  margin: 0; }
+  header figure img {
+    /*max-width: 80%;
+    margin: 0 10%;*/
+    width: 100%; }
 
 nav.mobil {
   width: 100%;
@@ -98,7 +101,7 @@ p, span, a, address {
   text-decoration: none; }
 
 footer {
-  background-color: #13A512;
+  background-color: #286628;
   width: 100%;
   padding: 1rem;
   margin: 0% -1rem;
@@ -106,8 +109,7 @@ footer {
   footer a {
     color: #fff; }
   footer img {
-    max-width: 50%;
-    margin: 0 25%; }
+    max-width: 100%; }
 
 body #forside {
   /* Slideshow container */
@@ -153,7 +155,7 @@ body #forside {
     z-index: 3;
     max-width: 50%;
     margin: 0 25%; }
-  body #forside knapper {
+  body #forside .knapper {
     display: flex;
     justify-content: space-around; }
   body #forside button {
@@ -261,6 +263,28 @@ body #forside {
   padding: 15px; }
 
 @media screen and (min-width: 700px) {
+  header figure {
+    display: flex;
+    justify-content: center; }
+    header figure a {
+      display: inline-block; }
+      header figure a img {
+        max-width: 768px; }
+
+  footer figure {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; }
+    footer figure a img {
+      max-width: 275px; }
+
+  /*  footer {
+      display: flex;
+      flex-direction: column;
+      img {
+  
+      }
+    }*/
   .om {
     font-size: 1.4em; }
 
@@ -317,21 +341,28 @@ body #forside {
     nav a {
       color: #ffffff; }
 
-  body #forside video {
+  body #forside video, body #video video {
     max-width: 50%;
     margin: 0 25%; }
 
   body #forside .kasse {
+    width: 20%;
     padding: 10px;
     border: 1px solid #286628;
     margin: 2% 0.3%; }
 
-  footer {
+  footer #f1 {
     display: flex;
-    justify-content: flex-start; }
-    footer img {
-      height: 185px;
-      width: inherit; }
+    justify-content: space-between; }
+  footer figure {
+    flex-direction: row; }
+    footer figure #f2 {
+      display: flex;
+      justify-content: space-around;
+      max-width: 100%; }
+  footer img {
+    height: 185px;
+    width: inherit; }
 
   .om {
     font-size: 1.6em; }
@@ -358,8 +389,8 @@ body #forside {
     margin: auto; }
 
   .prev1, .next1, .prev2, .next2, .prev3, .next3 {
-    display: none; } }
-@media screen and (min-width: 700px) {
+    display: none; }
+
   .tilbudside {
     display: grid;
     grid-template-columns: auto 45% 20px 45% auto;
