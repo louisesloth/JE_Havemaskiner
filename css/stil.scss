@@ -147,6 +147,7 @@ nav a {
 //louise slut
 //jessie
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 //jessie slut
 //louise
 h1 {
@@ -245,7 +246,7 @@ body #forside {
     max-width: 50%;
     margin: 0 25%;
   }
-.knapper{
+.knapper {
   display: flex;
   justify-content: space-around;
 }
@@ -262,7 +263,7 @@ button {
   }
 
 button.mail {
-  a, adress {
+  a, address {
     color: $lime;
   }
   }
@@ -313,6 +314,28 @@ button.mail {
 //forside Louise slut
 
 //om Jessie
+body.omos main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:  "om-text         om-text"
+  "je                   je"
+  "om2                 om2"
+  "om-billeder om-billeder";
+
+  .je {
+    grid-area: je;
+  }
+  .om-text{
+    grid-area: om-text;
+  }
+  .om2 {
+    grid-area: om2;
+  }
+  .om-billeder {
+    grid-area: om-billeder;
+  }
+
+}
 
 
 .butik {
@@ -329,8 +352,9 @@ button.mail {
 }
 .om {
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8em;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 //om Jessie slut
@@ -445,9 +469,40 @@ button.mail {
   //overordnet louise slut
   //om jessica
   .om {
-    font-size: 1.4em;
+    font-size: 2.1em;
+    display:flex;
+    justify-content: left;
   }
-  //om jessica slut
+  body.omos main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:  "om-text         om-text"
+                          "je                   je"
+                          "om2                 om2"
+                          "om-billeder om-billeder";
+
+    .je {
+      grid-area: je;
+    }
+    .om-text{
+      grid-area: om-text;
+    }
+    .om2 {
+      grid-area: om2;
+    }
+    .om-billeder {
+      grid-area: om-billeder;
+    }
+    .profil {
+      margin:2px;
+    }
+    .butik {
+      margin:2px;
+    }
+  }
+
+  //om Jessie slut
+
   //produkter ivan
   /* landscape tablets  */
     #container1, #container2, #container3 {
@@ -543,11 +598,38 @@ button.mail {
     }
   }
   //overordnet og forside louise slut
-  //om jessica
-  .om {
-    font-size: 1.6em;
+  //om jessie
+  body.omos main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:  "om-text         om-text"
+    "je                   je"
+    "om2                 om2"
+    "om-billeder om-billeder";
+
+    .je {
+      grid-area: je;
+    }
+    .om-text{
+      grid-area: om-text;
+    }
+    .om2 {
+      grid-area: om2;
+    }
+    .om-billeder {
+      grid-area: om-billeder;
+    }
+    .profil {
+      margin:2px;
+    }
+    .butik {
+      margin:2px;
+    }
+    .om {
+      font-size:2.5em;
+    }
   }
-  //om jessica slut
+  //om jessie slut
   //produkter ivan
   /* desktops */
     #container1, #container2, #container3 {
@@ -580,20 +662,14 @@ button.mail {
     grid-template-areas: ". header header header ."
     ". selvetilbud . billedet ."
     ". footer footer footer .";
-
-    header {
-      grid-area: header;
     }
-
     .selvetilbud {
       grid-area: selvetilbud;
     }
     .biledet {
       grid-area: billedet;
     }
-    footer {
-      grid-area: footer;
-    }
   }
+
 //tilbud anders slut
 }}
